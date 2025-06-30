@@ -6,7 +6,7 @@
 /*   By: flvejux <flvejux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/27 14:54:08 by flvejux           #+#    #+#             */
-/*   Updated: 2025/06/29 14:15:47 by flvejux          ###   ########.fr       */
+/*   Updated: 2025/06/30 16:28:28 by flvejux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,13 @@ int	ft_atoi(char *str)
 		str++;
 	sign = 1;
 	while (*str == '-' || *str == '+')
-	{
-		if (*str == '-')
+		if (*str++ == '-')
 			sign *= -1;
-	}
+
 	nbr = 0;
-	while (*str >= '0' && *str >= '9')
+	while (*str >= '0' && *str <= '9')
 	{
-		nbr = nbr * 10 + *str - '0';
+		nbr = (nbr * 10) + (*str - '0');
 		str++;
 	}
 	return (sign * nbr);
