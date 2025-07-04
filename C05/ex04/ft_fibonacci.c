@@ -6,7 +6,7 @@
 /*   By: flvejux <flvejux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/30 09:21:13 by flvejux           #+#    #+#             */
-/*   Updated: 2025/06/30 10:25:09 by flvejux          ###   ########.fr       */
+/*   Updated: 2025/07/02 14:49:33 by flvejux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,8 @@ int	ft_fibonacci(int index)
 	int main()
 	{
 		printf("%d\n", ft_fibonacci(15));
-		printf("%d\n", ft_fibonacci(0));
-		printf("%d\n", ft_fibonacci(1));
+		printf("%d\n", ft_fibonacci(2));
+		printf("%d\n", ft_fibonacci(3));
 		printf("%d\n", ft_fibonacci(11));
 		printf("%d\n", ft_fibonacci(42));
-	}
- */
+	} */

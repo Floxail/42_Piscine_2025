@@ -1,38 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_prime.c                                      :+:      :+:    :+:   */
+/*   ft_rev_param.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: flvejux <flvejux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/30 10:43:57 by flvejux           #+#    #+#             */
-/*   Updated: 2025/07/03 10:36:24 by flvejux          ###   ########.fr       */
+/*   Created: 2025/07/01 15:43:41 by flvejux           #+#    #+#             */
+/*   Updated: 2025/07/01 16:33:03 by flvejux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_is_prime(int nb)
-{
-	int	pr;
+#include <unistd.h>
 
-	pr = 2;
-	if (nb <= 1)
-		return (0);
-	while (pr < nb)
-	{
-		if ((nb % pr) == 0)
-			return (0);
-		pr++;
-	}
-	return (1);
-}
-/*
-#include<stdio.h>
-int main()
+void	ft_putstr(char *str)
 {
-	printf("%d\n", ft_is_prime(2));
-	printf("%d\n", ft_is_prime(4));
-	printf("%d\n", ft_is_prime(7));
-	printf("%d\n", ft_is_prime(12));
-	printf("%d\n", ft_is_prime(-12));
+	write(1, str++, 1);
 }
- */
+
+int	main(int argc, char **argv)
+{
+	int	i;
+
+	i = (argc - 1);
+	while (i > 0)
+	{
+		ft_putstr(argv[i]);
+		write(1, "\n", 1);
+		i--;
+	}
+}

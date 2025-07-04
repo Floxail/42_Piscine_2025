@@ -1,38 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_prime.c                                      :+:      :+:    :+:   */
+/*   ft_print_program_name.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: flvejux <flvejux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/30 10:43:57 by flvejux           #+#    #+#             */
-/*   Updated: 2025/07/03 10:36:24 by flvejux          ###   ########.fr       */
+/*   Created: 2025/07/01 10:17:42 by flvejux           #+#    #+#             */
+/*   Updated: 2025/07/03 12:20:46 by flvejux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_is_prime(int nb)
-{
-	int	pr;
+#include <unistd.h>
 
-	pr = 2;
-	if (nb <= 1)
-		return (0);
-	while (pr < nb)
-	{
-		if ((nb % pr) == 0)
-			return (0);
-		pr++;
-	}
-	return (1);
-}
-/*
-#include<stdio.h>
-int main()
+void	ft_putstr(char *str)
+
 {
-	printf("%d\n", ft_is_prime(2));
-	printf("%d\n", ft_is_prime(4));
-	printf("%d\n", ft_is_prime(7));
-	printf("%d\n", ft_is_prime(12));
-	printf("%d\n", ft_is_prime(-12));
+	while (*str)
+		write(1, str++, 1);
 }
- */
+
+int	main(int argc, char **argv)
+{
+
+	if (argc == 1)
+	{
+		ft_putstr(argv[0]);
+		ft_putstr("\n");
+	}
+	return (0);
+}
