@@ -22,7 +22,7 @@ void	ft_putstr(char *str)
 int	main(int argc, char **argv)
 {
 
-	if (argc == 1)
+	if (argc)
 	{
 		ft_putstr(argv[0]);
 		ft_putstr("\n");
