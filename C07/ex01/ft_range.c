@@ -1,39 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
+/*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: flvejux <flvejux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/25 09:59:57 by flvejux           #+#    #+#             */
-/*   Updated: 2025/07/03 14:50:51 by flvejux          ###   ########.fr       */
+/*   Created: 2025/07/06 13:44:51 by flvejux           #+#    #+#             */
+/*   Updated: 2025/07/06 16:33:01 by flvejux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strlowcase(char *str)
+#include <stdlib.h>
 
+int	*ft_range(int min, int max)
 {
 	int	i;
+	int	*dest;
 
 	i = 0;
-	while (str[i])
+	if (min >= max)
+		return (NULL);
+	dest = malloc(sizeof(int) * (max - min));
+	if (!dest)
+		return (NULL);
+	while (i < max - min)
 	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
-			str[i] += 32;
-		else
-			i++;
+		dest[i] = min + i;
+		i++;
 	}
-	return (str);
+	return (dest);
 }
 /*
 #include <stdio.h>
-
-int main()
+int	main(int ac, char **av)
 {
-	char	str[] = "HeLL0_wOrLD !";
-	printf("original : %s\n", str);
-	ft_strlowcase(str);
-	printf("modified : %s\n", str);
-	return 0;
-}
-*/
+	int	a = atoi(av[1]);
+	int	b = atoi(av[2]);
+	int *res = ft_range(a,b);
+	int i = 0;
+	while (i < b - a)
+	{
+		printf("%d\n", res[i++]);
+	}
+	return (1);
+
+} */

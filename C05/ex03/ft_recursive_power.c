@@ -6,7 +6,7 @@
 /*   By: flvejux <flvejux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/29 16:53:41 by flvejux           #+#    #+#             */
-/*   Updated: 2025/06/29 17:39:57 by flvejux          ###   ########.fr       */
+/*   Updated: 2025/07/07 13:07:32 by flvejux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ int	main()
 {
 	printf("%d\n", ft_recursive_power(3, 4));
 	printf("%d\n", ft_recursive_power(1, 0));
-	printf("%d\n", ft_recursive_power(3, -1));
+	printf("%d\n", ft_recursive_power(4, 4));
 } */

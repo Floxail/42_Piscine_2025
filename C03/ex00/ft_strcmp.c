@@ -6,7 +6,7 @@
 /*   By: flvejux <flvejux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/26 11:24:28 by flvejux           #+#    #+#             */
-/*   Updated: 2025/06/26 11:31:07 by flvejux          ###   ########.fr       */
+/*   Updated: 2025/07/03 10:36:19 by flvejux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,7 @@ int	ft_strcmp(char *s1, char *s2)
 	int	i;
 
 	i = 0;
-	while (s1[i] == s2[i] && (s1[i] || s2[i]))
-	{
+	while (s1[i] == s2[i] && s1[i])
 		i++;
-	}
 	return (s1[i] - s2[i]);
 }

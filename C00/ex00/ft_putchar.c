@@ -6,7 +6,7 @@
 /*   By: flvejux <flvejux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/23 17:36:20 by flvejux           #+#    #+#             */
-/*   Updated: 2025/06/27 11:26:28 by flvejux          ###   ########.fr       */
+/*   Updated: 2025/06/30 11:40:29 by flvejux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,9 @@ void	ft_putchar(char c)
 {
 	write (1, &c, 1);
 }
-
-#include <stdio.h>
 /*
 int main()
 {
-	ft_putchar('Z');
+	ft_putchar('z');
 }
-*/
+ */

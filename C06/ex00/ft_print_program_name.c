@@ -6,7 +6,7 @@
 /*   By: flvejux <flvejux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/01 10:17:42 by flvejux           #+#    #+#             */
-/*   Updated: 2025/07/03 12:20:46 by flvejux          ###   ########.fr       */
+/*   Updated: 2025/07/06 14:32:21 by flvejux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,10 @@ void	ft_putstr(char *str)
 
 int	main(int argc, char **argv)
 {
-
 	if (argc)
 	{
 		ft_putstr(argv[0]);
-		ft_putstr("\n");
+		write(1, "\n", 1);
 	}
 	return (0);
 }

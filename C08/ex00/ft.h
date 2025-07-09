@@ -1,19 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft.h                                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: flvejux <flvejux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/28 16:26:50 by flvejux           #+#    #+#             */
-/*   Updated: 2025/06/28 18:12:48 by flvejux          ###   ########.fr       */
+/*   Created: 2025/07/08 11:56:27 by flvejux           #+#    #+#             */
+/*   Updated: 2025/07/09 10:13:48 by flvejux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int x, int y);
+#ifndef FT_H
+# define FT_H
 
-int	main(void)
-{
-	rush(2, 2);
-	return (0);
-}
+void	ft_swap(int *a, int *b);
+void	ft_putstr(char *str);
+int		ft_strlen(char *str);
+int		ft_strcmp(char *s1, char *s2);
+
+#endif

@@ -1,19 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_rev_params.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: flvejux <flvejux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/28 16:26:50 by flvejux           #+#    #+#             */
-/*   Updated: 2025/06/28 18:12:48 by flvejux          ###   ########.fr       */
+/*   Created: 2025/07/01 15:43:41 by flvejux           #+#    #+#             */
+/*   Updated: 2025/07/05 15:19:56 by flvejux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int x, int y);
+#include <unistd.h>
 
-int	main(void)
+void	ft_putstr(char *str)
 {
-	rush(2, 2);
-	return (0);
+	while (*str)
+		write(1, str++, 1);
+}
+
+int	main(int argc, char **argv)
+{
+	int	i;
+
+	i = (argc - 1);
+	while (i > 0)
+	{
+		ft_putstr(argv[i]);
+		write(1, "\n", 1);
+		i--;
+	}
 }

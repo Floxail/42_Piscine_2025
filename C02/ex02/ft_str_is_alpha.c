@@ -6,7 +6,7 @@
 /*   By: flvejux <flvejux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/24 15:00:07 by flvejux           #+#    #+#             */
-/*   Updated: 2025/06/25 11:00:31 by flvejux          ###   ########.fr       */
+/*   Updated: 2025/07/03 12:40:38 by flvejux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,7 @@ int	ft_str_is_alpha(char *str)
 	{
 		if ((str[i] >= 'a' && str[i] <= 'z')
 			|| (str[i] >= 'A' && str[i] <= 'Z'))
-		{
 			i++;
-		}
 		else
 			return (0);
 	}
